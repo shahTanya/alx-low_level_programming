@@ -1,18 +1,17 @@
 #include "main.h"
-
 /**
- *  * main - check the code
- *   *
- *    * Return: Always 0.
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char arr[8] = "_putchar";
-	int i;
-	for (i = 0; i < 8; i++)
+	char *sh = "_putchar";
 
+	while (*sh)
 	{
-	_putchar(arr[i]);
+		_putchar(*sh);
+		sh++;
 	}
 	_putchar('\n');
 
